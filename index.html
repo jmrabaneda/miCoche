@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f6feb">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Mi Coche</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Mi Coche</h1>
+  <div class="vehicle-bar">
+    <select id="vehicleSelect" aria-label="Vehículo"></select>
+    <button id="btnVehicles" class="ghost" type="button">Vehículos</button>
+  </div>
+</header>
+
+<main id="view"></main>
+
+<nav>
+  <button data-tab="historial" class="active" type="button">Historial</button>
+  <button data-tab="avisos" type="button">Avisos</button>
+  <button data-tab="resumen" type="button">Resumen</button>
+  <button data-tab="ajustes" type="button">Ajustes</button>
+</nav>
+
+<button id="fab" type="button" aria-label="Añadir">+</button>
+
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
